@@ -76,8 +76,8 @@ export function main(){
 	gl.enable(gl.DEPTH_TEST);
 	gl.depthFunc(gl.LEQUAL);	
 	
-	LoadShader("simpleFS");
-	LoadModel("SphereModel");	
+	LoadShader("simpleReflectionFS");
+	LoadModel("BunnyModel");	
 	
 	var startViewDir = [1.6,0.0,0.0];
 	vMath.vec3.normalize(startViewDir, startViewDir);
